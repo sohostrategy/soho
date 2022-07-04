@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          If you're a current client looking for support, email
+          If you are a current client looking for support, email
           <code className={styles.code}>support@sohostrategy.com</code>
         </p>
 
