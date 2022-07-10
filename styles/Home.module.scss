@@ -5,13 +5,14 @@ $mobile-width: 1300px;
   user-select: none;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   > svg {
-    position: relative;
-    left: -1750px;
+    flex-shrink: 0;
     width: 5000px;
   }
 }
-
 .container {
   min-height: 100vh;
   color: #fff;
