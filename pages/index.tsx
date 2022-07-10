@@ -141,7 +141,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <RainbowOverlay className={styles["rainbow-overlay"]} />
+        <div className={styles["rainbow-overlay-wrapper"]}>
+          <RainbowOverlay />
+        </div>
         <div className={styles["content-wrapper"]}>
           <main className={styles.main}>
             <SohoStrategyLogo />

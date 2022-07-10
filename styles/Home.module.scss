@@ -1,10 +1,15 @@
 $mobile-width: 1300px;
 
-.rainbow-overlay {
+.rainbow-overlay-wrapper {
   position: absolute;
-  width: 5000px;
-  left: -1750px;
   user-select: none;
+  overflow: hidden;
+  width: 100%;
+  > svg {
+    position: relative;
+    left: -1750px;
+    width: 5000px;
+  }
 }
 
 .container {
