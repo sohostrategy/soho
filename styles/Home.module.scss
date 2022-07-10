@@ -1,0 +1,135 @@
+$mobile-width: 1300px;
+
+.rainbow-overlay {
+  position: absolute;
+  width: 5000px;
+  left: -1750px;
+  user-select: none;
+}
+
+.container {
+  min-height: 100vh;
+  background: #1d1f28;
+  color: #fff;
+  display: flex;
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.content-wrapper {
+  padding: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  @media screen and (max-width: $mobile-width) {
+    padding: 3rem;
+  }
+
+  h1 {
+    font-weight: 200;
+  }
+  p {
+    color: #858f99;
+    font-size: 18px;
+    line-height: 22px;
+    > a {
+      white-space: nowrap;
+      font-family: "OpenSauceOneBold";
+      color: #d0d0d0;
+      transition: color 300ms;
+      .chevron-right {
+        vertical-align: top;
+        position: relative;
+        top: -3px;
+        left: -7px;
+        transition: left 300ms;
+      }
+      &:hover {
+        color: #fff;
+        .chevron-right {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.clients-wrapper {
+  padding: 0rem 7.5rem;
+  background: rgba(0, 0, 0, 0.19);
+  width: 800px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.desktop-client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 3rem;
+  column-gap: 1.5rem;
+  @media screen and (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+$scroll-track-width: 3000px;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * ($scroll-track-width / 2)));
+  }
+}
+
+.mobile-client-logos {
+  overflow: hidden;
+  position: relative;
+  @media screen and (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.scroll-track {
+  padding: 3rem 0;
+  width: $scroll-track-width;
+  position: relative;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  justify-content: space-around;
+  div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: $scroll-track-width / 2;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.client-logo {
+  height: 75px;
+  position: relative;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+.main {
+  max-width: 650px;
+}
