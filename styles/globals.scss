@@ -1,0 +1,27 @@
+@import "./fonts.scss";
+
+html,
+body {
+  background-color: #1d1f28;
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSauceOneLight", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
+html,
+body,
+#__next {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
