@@ -1,14 +1,16 @@
 # SOHO
 
-SOHO is a full-service digital strategy agency and product studio, set up in early 2008.
+## About Soho Strategy
 
-This public repository contains the holding page at [sohostrategy.com](https://sohostrategy.com/) which replaced the previous website in July 2022.
+Soho Strategy (**SOHO**) is a full-service digital strategy agency and product studio, set up in early 2008.
 
 SOHO stopped taking new clients in December 2018 to focus more fully on [HASH](https://hash.ai/).
 
-## About this site
+Exiting clients can continue to access private repositories in the `sohostrategy` organization on GitHub, or can contact their account manager to arrange for the transfer of these to their own namespaces. Migration support is available.
 
-This microsite is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About this repository
+
+This public repository contains the holding page at [sohostrategy.com](https://sohostrategy.com/) which replaced the previous website in July 2022. The microsite is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Getting started
 
