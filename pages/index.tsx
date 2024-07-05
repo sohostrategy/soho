@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import React, { FC } from "react";
 import { RainbowOverlay } from "../components/RainbowOverlay";
 import { UnitedNationsLogo } from "../components/UnitedNationsLogo";
@@ -39,9 +39,11 @@ const mapClientToElement = ({ SvgLogo, imageSrc, name, height }: Client) => (
       <Image
         src={imageSrc}
         alt={name}
+        layout="fixed"
         width={((height ?? 75) / imageSrc.height) * imageSrc.width}
         height={height ?? 75}
-        className={styles["client-logo"]} />
+        className={styles["client-logo"]}
+      />
     ) : null}
   </React.Fragment>
 );
