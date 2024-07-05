@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import React, { FC } from "react";
 import { RainbowOverlay } from "../components/RainbowOverlay";
 import { UnitedNationsLogo } from "../components/UnitedNationsLogo";
